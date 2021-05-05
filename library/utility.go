@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"fmt"
 	"strings"
-	"brimo.bri.co.id/qrmpmparse/entity"
+	"github.com/addonrizky/qrmpmparse/entity"
 )
 
 func StringInSlice(a string, list []string) bool {
