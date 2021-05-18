@@ -3,8 +3,9 @@ package library
 import (
 	"strconv"
 	"fmt"
-	"strings"
 	"github.com/addonrizky/qrmpmparse/entity"
+	"github.com/addonrizky/qrmpmparse/constant"
+	"encoding/json"
 )
 
 func StringInSlice(a string, list []string) bool {
@@ -39,8 +40,7 @@ func GetSubtag(stringTagValue string) map[string]string {
 		}
 		currentIndex = endIndex
 
-		tagMap[tagLabel] = strings.ToUpper(tagValue)
-		
+		tagMap[tagLabel] = tagValue
 	}
 
 	return tagMap
@@ -53,4 +53,24 @@ func GetExtractionCode(code string, desc string) entity.ExtractionCode{
 		Desc: desc,
 	}
 	return extractionCode
+}
+
+func IsMerchantAccountInfoExist(tagMapByte []byte) bool {
+	isMerchantAccountInfoExist := false
+	c := make(map[string]json.RawMessage)
+    err := json.Unmarshal(tagMapByte, &c)
+    if err != nil {
+        return isMerchantAccountInfoExist
+    }
+	k := make([]string, len(c))
+	i := 0
+	for s, _ := range c {
+		k[i] = s
+		if isMerchantAccountInfoExist == false {
+			isMerchantAccountInfoExist = StringInSlice(s, constant.GetMerchantAccountInfoTag())
+		}
+		i++;
+	}
+    
+	return isMerchantAccountInfoExist
 }
