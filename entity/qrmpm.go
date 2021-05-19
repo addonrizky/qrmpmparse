@@ -3,30 +3,30 @@ package entity
 type RootID struct {
 	Tag00 string `json:"00,omitempty"`
 	Tag01 string `json:"01,omitempty"`
-	Tag02 SubtagMerchantAccountInformation `json:"02,omitempty"`
-	Tag03 SubtagMerchantAccountInformation `json:"03,omitempty"`
-	Tag04 SubtagMerchantAccountInformation `json:"04,omitempty"`
-	Tag05 SubtagMerchantAccountInformation `json:"05,omitempty"`
-	Tag06 SubtagMerchantAccountInformation `json:"06,omitempty"`
-	Tag07 SubtagMerchantAccountInformation `json:"07,omitempty"`
-	Tag08 SubtagMerchantAccountInformation `json:"08,omitempty"`
-	Tag09 SubtagMerchantAccountInformation `json:"09,omitempty"`
-	Tag10 SubtagMerchantAccountInformation `json:"10,omitempty"`
-	Tag11 SubtagMerchantAccountInformation `json:"11,omitempty"`
-	Tag12 SubtagMerchantAccountInformation `json:"12,omitempty"`
-	Tag13 SubtagMerchantAccountInformation `json:"13,omitempty"`
-	Tag14 SubtagMerchantAccountInformation `json:"14,omitempty"`
-	Tag15 SubtagMerchantAccountInformation `json:"15,omitempty"`
-	Tag16 SubtagMerchantAccountInformation `json:"16,omitempty"`
-	Tag17 SubtagMerchantAccountInformation `json:"17,omitempty"`
-	Tag18 SubtagMerchantAccountInformation `json:"18,omitempty"`
-	Tag19 SubtagMerchantAccountInformation `json:"19,omitempty"`
-	Tag20 SubtagMerchantAccountInformation `json:"20,omitempty"`
-	Tag21 SubtagMerchantAccountInformation `json:"21,omitempty"`
-	Tag22 SubtagMerchantAccountInformation `json:"22,omitempty"`
-	Tag23 SubtagMerchantAccountInformation `json:"23,omitempty"`
-	Tag24 SubtagMerchantAccountInformation `json:"24,omitempty"`
-	Tag25 SubtagMerchantAccountInformation `json:"25,omitempty"`
+	Tag02 string `json:"02,omitempty"`
+	Tag03 string `json:"03,omitempty"`
+	Tag04 string `json:"04,omitempty"`
+	Tag05 string `json:"05,omitempty"`
+	Tag06 string `json:"06,omitempty"`
+	Tag07 string `json:"07,omitempty"`
+	Tag08 string `json:"08,omitempty"`
+	Tag09 string `json:"09,omitempty"`
+	Tag10 string `json:"10,omitempty"`
+	Tag11 string `json:"11,omitempty"`
+	Tag12 string `json:"12,omitempty"`
+	Tag13 string `json:"13,omitempty"`
+	Tag14 string `json:"14,omitempty"`
+	Tag15 string `json:"15,omitempty"`
+	Tag16 string `json:"16,omitempty"`
+	Tag17 string `json:"17,omitempty"`
+	Tag18 string `json:"18,omitempty"`
+	Tag19 string `json:"19,omitempty"`
+	Tag20 string `json:"20,omitempty"`
+	Tag21 string `json:"21,omitempty"`
+	Tag22 string `json:"22,omitempty"`
+	Tag23 string `json:"23,omitempty"`
+	Tag24 string `json:"24,omitempty"`
+	Tag25 string `json:"25,omitempty"`
 	Tag26 SubtagMerchantAccountInformation `json:"26,omitempty"`
 	Tag27 SubtagMerchantAccountInformation `json:"27,omitempty"`
 	Tag28 SubtagMerchantAccountInformation `json:"28,omitempty"`

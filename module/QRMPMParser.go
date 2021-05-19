@@ -54,7 +54,7 @@ func ExtractTagQR(QRString string) (entity.ExtractionCode, string, entity.RootID
 	tagMapByte, _ := json.Marshal(tagMap)
 	err = json.Unmarshal(tagMapByte, &tagObject)
 
-	//check existence of tag 26-51, merchant account informations
+	//check existence of tag 02-51, merchant account informations
 	isMerchantAccountInfoExist := false
 	isMerchantAccountInfoExist = library.IsMerchantAccountInfoExist(tagMapByte)
 
