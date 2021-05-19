@@ -47,11 +47,11 @@ type RootID struct {
 	Tag43 SubtagMerchantAccountInformation `json:"43,omitempty"`
 	Tag44 SubtagMerchantAccountInformation `json:"44,omitempty"`
 	Tag45 SubtagMerchantAccountInformation `json:"45,omitempty"`
-	Tag46 SubtagMerchantAccountInformation `json:"46,omitempty"`
-	Tag47 SubtagMerchantAccountInformation `json:"47,omitempty"`
-	Tag48 SubtagMerchantAccountInformation `json:"48,omitempty"`
-	Tag49 SubtagMerchantAccountInformation `json:"49,omitempty"`
-	Tag50 SubtagMerchantAccountInformation `json:"50,omitempty"`
+	Tag46 string `json:"46,omitempty"`
+	Tag47 string `json:"47,omitempty"`
+	Tag48 string `json:"48,omitempty"`
+	Tag49 string `json:"49,omitempty"`
+	Tag50 string `json:"50,omitempty"`
 	Tag51 SubtagMerchantAccountInformation `json:"51,omitempty"`
 	Tag52 string `json:"52,omitempty"`
 	Tag53 string `json:"53,omitempty"`
