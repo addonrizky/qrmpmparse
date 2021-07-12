@@ -74,3 +74,10 @@ func IsMerchantAccountInfoExist(tagMapByte []byte) bool {
     
 	return isMerchantAccountInfoExist
 }
+
+func Lpad(s string,pad string, plength int)string{
+    for i:=len(s);i<plength;i++{
+        s=pad+s
+    }
+    return s
+}

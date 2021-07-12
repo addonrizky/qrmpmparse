@@ -65,6 +65,7 @@ func ExtractTagQR(QRString string) (entity.ExtractionCode, string, entity.RootID
 
 	calculatedCRC := crc.CalculateCRC(crc.CCITT, []byte(QRString[:len(QRString)-4]))
 	crc := fmt.Sprintf("%X", calculatedCRC)
+	crc = library.Lpad(crc,"0",4)
 	if crc != tagObject.Tag63 {
 		extractionCode = library.GetExtractionCode("E2", "invalid CRC")
 		return extractionCode,"{}",tagObject,tagSpecial62
